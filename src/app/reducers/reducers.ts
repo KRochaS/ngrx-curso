@@ -1,13 +1,14 @@
 import { ActionReducerMap, createSelector, createFeatureSelector, ActionReducer, MetaReducer } from '@ngrx/store';
 
 import { environment } from '../../environments/environment';
-import { RouterStateUrl } from '../../shared/utils';
+
 
 import * as fromRouter from '@ngrx/router-store';
 import { storeFreeze } from 'ngrx-store-freeze'
 
 import * as fromAuth from '../auth/reducers/auth.reducer';
 import { FormatInputPathObject } from 'path';
+import { RouterStateUrl } from '../shared/utils';
 
 export interface State {
     auth: fromAuth.state,
